@@ -129,7 +129,7 @@ python -m torch.distributed.launch --nproc_per_node 2 --nnodes 1 --node_rank 0 t
 If our code or models help your work, please cite MobileViG (CVPRW 2023), MobileViGv2 (CVPRW 2024), and GreedyViG (CVPR 2024):
 
 ```
-@InProceedings{MobileViGv2_2024_CVPR,
+@InProceedings{MobileViGv2_2024,
     author    = {Avery, William and Munir, Mustafa and Marculescu, Radu},
     title     = {Scaling Graph Convolutions for Mobile Vision},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
