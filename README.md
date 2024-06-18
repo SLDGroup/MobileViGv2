@@ -1,4 +1,8 @@
 # MobileViGv2
+
+## Scaling Graph Convolutions for Mobile Vision
+[PDF](https://openaccess.thecvf.com/content/CVPR2024W/MAI/html/Avery_Scaling_Graph_Convolutions_for_Mobile_Vision_CVPRW_2024_paper.html) | [Arxiv](https://arxiv.org/abs/2406.05850)
+
 William Avery, Mustafa Munir, and Radu Marculescu
 
 # Overview
@@ -118,4 +122,41 @@ Semantic segmentation on ADE20K is implemented based on [MMSegmentation](https:/
 
 ```
 python -m torch.distributed.launch --nproc_per_node 2 --nnodes 1 --node_rank 0 tools/train.py configs/sem_fpn/fpn_mobilevigv2_m_ade20k_40k.py --mobilevigv2_model mobilevigv2_m --work-dir semantic_results/ --launcher pytorch > semantic_results/mobilevigv2_m_run_semantic.txt
+```
+
+### Citation
+
+If our code or models help your work, please cite MobileViG (CVPRW 2023), MobileViGv2 (CVPRW 2024), and GreedyViG (CVPR 2024):
+
+```
+@InProceedings{MobileViGv2_2024_CVPR,
+    author    = {Avery, William and Munir, Mustafa and Marculescu, Radu},
+    title     = {Scaling Graph Convolutions for Mobile Vision},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2024},
+    pages     = {5857-5865}
+}
+```
+
+```
+@InProceedings{mobilevig2023,
+    author    = {Munir, Mustafa and Avery, William and Marculescu, Radu},
+    title     = {MobileViG: Graph-Based Sparse Attention for Mobile Vision Applications},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2023},
+    pages     = {2211-2219}
+}
+```
+
+```
+@InProceedings{GreedyViG_2024_CVPR,
+    author    = {Munir, Mustafa and Avery, William and Rahman, Md Mostafijur and Marculescu, Radu},
+    title     = {GreedyViG: Dynamic Axial Graph Construction for Efficient Vision GNNs},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {6118-6127}
+}
 ```
